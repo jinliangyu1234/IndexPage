@@ -5,8 +5,8 @@ import type {
 } from "./types/config"
 
 export const siteConfig: SiteConfig = {
-    title: "Motues",
-    subTitle: "记录生活",
+    title: "雪糕小豪",
+    subTitle: "主站",
 
     backgroundImage: {
         enabled: false, // If backgroundImage is not enabled, this will be used as the background color
@@ -14,19 +14,19 @@ export const siteConfig: SiteConfig = {
     },
 
     mirrorSite: {
-        enabled: true, // If mirrorSite is enabled, this will alart the user to visit the mirror site if user is in region below
-        url: "www.motues.top",
+        enabled: false, // If mirrorSite is enabled, this will alart the user to visit the mirror site if user is in region below
+        url: "xgxh.cc",
         region: "CN" // Region of the mirror site, 
     },
 
-    favicon: "/favicon/favicon.ico" // Path of the favicon, relative to the /public directory
+    favicon: "/favicon/logo.ico" // Path of the favicon, relative to the /public directory
 }
 
 export const profileConfig: ProfileConfig = {
-    avatar: "assets/Motues.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    name: "Motues",
-    description: "Like River!",
-    introPage: "https://www.motues.top",
+    avatar: "assets/logo.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    name: "雪糕小豪",
+    description: "这是主站 请点击下方前往分站",
+    introPage: "https://www.xgxh.cc",
     links: [
         /* -------------------------------- Icon -------------------------------- */
         // Visit https://icones.js.org/ for icon codes
@@ -39,40 +39,27 @@ export const profileConfig: ProfileConfig = {
         // The colors a best to be clearly visible in both light and dark environments 
         // If color is not set, it will use the icon's default color
         {
-          name: "Blog",
-          url: "https://blog.motues.top",
-          icon: "fa6-solid:tree", 
+          name: "个人博客",
+          url: "https://blog.xgxh.cc",
+          icon: "assets/icons/Book.svg", 
           color: "#0dbc79",
         },
         {
-            name: "Note",
-            url: "https://note.motues.top",
-            icon: "fa6-solid:book",
-            color: "#b4a992",
-        },
-        {
-            name: "Lab",
-            url: "/lab",
-            icon: "fa6-solid:server",
-            color: "#72b6b3",
+            name: "我的世界服务器",
+            url: "https://wiki.xgxh.cc",
+            icon: "assets/icons/minecraft.svg",
         },
         {
             name: "GitHub",
-            url: "https://github.com/Motues",
+            url: "https://github.com/jinliangyu1234",
             icon: "fa6-brands:github",
             color: "#888",
         },
         {
-            name: "Netease",
-            url: "https://music.163.com/#/user/home?id=1601379853",
-            icon: "simple-icons:neteasecloudmusic",
-            color: "#ff2822",
-        },
-        {
-            name: "Mail",
-            url: "mailto:me@motues.top",
-            icon: "fa6-solid:envelope",
-            color: "#43a4d1ff"
+            name: "更多界面",
+            url: "/lab",
+            icon: "fa6-solid:grip", // 最适合“更多界面”
+            color: "#ff914d", // 暖橙色，好看
         },
     ]
 }
@@ -80,48 +67,10 @@ export const profileConfig: ProfileConfig = {
 export const labConfig : LabConfig = [
     // Icon and color rules are same as profileConfig
     {
-        name: "BlockBoard",
-        description: "A real-time online block board",
-        url: "https://blockboard.motues.top",
+        name: "没有啦～",
+        description: "谢谢",
+        url: "",
         icon: "svg-spinners:blocks-wave", 
         color: "#9fa1a1ff"
     },
-    {
-        name: "Uptime Kuma",
-        description: "A fancy self-hosted monitoring tool",
-        url: "https://uptime.motues.top/status/website",
-        icon: "assets/icons/uptime-kuma.svg",
-    },
-    {
-        name: "Meting API",
-        description: "A powerful music API ",
-        url: "https://meting.motues.top/",
-        icon: "fa6-solid:paperclip",
-        color: "#ffcf27"
-    },
-    {
-        name: "Server",
-        description: "A server monitor",
-        url: "https://server.motues.top",
-        icon: "svg-spinners:bars-scale",
-        color: "#50b8e9ff"
-    },
-    {
-        name: "OpenList",
-        description: "A storage service",
-        url: "https://openlist.motues.top",
-        icon: "assets/icons/openlist.svg",
-    },
-    {
-        name: "Umami",
-        description: "A website analytics platform",
-        url: "https://umami.motues.top",
-        icon: "simple-icons:umami",
-        color: "#000000"
-    },{
-        name: "RSSHub",
-        description: "Everything is RSSible",
-        url: "https://rsshub.motues.top",
-        icon: "assets/icons/rsshub.svg",
-    }
 ]
